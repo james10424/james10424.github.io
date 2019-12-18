@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shitty Website</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        * {
+            color: white;
+            font-family: "Courier", Courier, monospace;
+            font-size: 16px;
+        }
+        a {
+            color: #20C20E;
+        }
+        #outer {
+            overflow-y: auto;
+            height: 99vh;
+        }
+        div {
+            /* width: 80em; */
+            word-wrap: break-word;
+            width: 100%;
+        }
+        u { 
+            text-decoration: underline;
+        }
+    </style>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" > </script>
+</head>
+<body>
+    <div id="outer">
+        Welcome to my shitty website
+        <br/>
+        Here are some places to checkout: <br/>
+
+        <!-- <a href="/test">test</a> -->
+        <a href="/test/aiq">AI (top secret)</a>
+        <a href="/test/309">CSC309</a>
+        <a href="/test/384/LunarLockout">Lunar Lockout</a>
+        <a href="/test/309/a/1/games">PHP games</a>
+        <a href="/test/309/a/2/js">shitty tank game</a>
+        <a href="/test/309/lecture/mobile">fun with css 3d</a>
+        <br/>
+        Otherwise, enjoy this fake terminal!
+        <div id="root"></div>
+    </div>
+
+    <input type="text" id="input" style="position: absolute; top: -999px" />
+
+    
+    <script type="text/babel" src="/index.jsx"></script>
+</body>
+</html>
