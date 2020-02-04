@@ -1,13 +1,7 @@
-// $(document).keypress(function(e) {
-//     $("#root").append(e.key);
-// });
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-
 class Term extends React.Component {
     constructor(props) {
         super(props);
-        this.prompt = <span><a href="http://shittywebsite.ddns.net">shittyWebsite</a>$ </span>;
+        this.prompt = <span><a href="/">guest</a>$ </span>;
         this.state = {
             input: "",
             history: [],
@@ -20,7 +14,7 @@ class Term extends React.Component {
                 return "";
             }
             s = s.split(" ");
-            if (s[0] == "help") {
+            if (s[0] == "man") {
                 if (!s[1]) {
                     return "Nothing really works here, it's just a fake terminal";
                 }
@@ -48,10 +42,35 @@ class Term extends React.Component {
                         </div>
                     );
                 }
+                if (s[1] == "whoareyou") {
+                    return (
+                        <div>
+                            <pre>WHOAREYOU(1)    General Commands Manual     WHOAREYOU(1)</pre>
+                            <b>Name</b>
+                            <pre>   whoareyou - return a link to my resume</pre>
+                            <b>SYNOPSIS</b>
+                            <pre>   whoareyou</pre>
+                            <b>DESCRIPTION</b>
+                            <pre>   Return a hyperlink to my resume so you can
+                                    get toknow who I am.
+                            </pre>
+                            <b>EXAMPLES</b>
+                            <pre>   <b>whoareyou</b></pre>
+                            <pre>        <a href="resume.pdf">resume.pdf</a></pre>
+                            <b>AUTHOR</b>
+                            <pre>   Written by me</pre>
+                            <b>REPORTING BUGS</b>
+                            <pre>   There can't be any bug in such simple command?</pre>
+                        </div>
+                    );
+                }
                 return "No help page for " + s[1];
             }
             if (s[0] == "link") {
                 return <a href={s[1]}>{s[1]}</a>;
+            }
+            if (s[0] == "whoareyou") {
+                return <a href="resume.pdf">resume.pdf</a>;
             }
             return s[0] + ": command not found"
         }

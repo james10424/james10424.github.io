@@ -1,0 +1,397 @@
+.circle {
+  /* width: 300px;
+  height: 300px; */
+  background: black;
+  border-radius: 50%;
+  opacity: .4;
+  visibility: hidden;
+}
+#joystickouter {
+  width: 400px;
+  height: 400px;
+  background: white;
+  border-radius: 50%;
+  opacity: .4;
+  border: 1px solid black;
+  visibility: hidden;
+  position: fixed; bottom: 150px; left: 100px;
+}
+.joystick {
+  width: 200px;
+  height: 200px;
+  position: fixed; bottom: 250px; left: 200px;
+}
+.fire {
+  width: 250px;
+  height: 250px;
+  position: fixed; bottom: 200px; right: 200px;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  line-height: 250px;
+  /* transform: rotateZ(90deg); */
+}
+#secondary {
+  width: 150px;
+  height: 150px;
+  position: fixed; bottom: 200px; right: 500px;
+  text-align: center;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  opacity: .4;
+  font-size: 50px;
+  line-height: 150px;
+  visibility: hidden;
+}
+#dashTouch {
+  width: 150px;
+  height: 150px;
+  position: fixed; bottom: 500px; right: 200px;
+  text-align: center;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  opacity: .4;
+  font-size: 50px;
+  line-height: 150px;
+  visibility: hidden;
+}
+@media only screen and (orientation:portrait){
+  #game {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg) translateY(50vw) translateX(20vh);
+    height: 100vw;
+    width: 90vh;
+  }
+  #mini, #gameSideBar, #weapon_info, #gameSideBar1 {
+    visibility: hidden;
+  }
+  #stage {
+    height: 100vw;
+    width: auto;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transform: translateX(100px) translateY(-150px);
+  }
+  #game {
+    position: fixed;
+  }
+  /* input {
+    font-size: 16px;
+  } */
+}
+/*end mobile*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300');
+@import url('https://fonts.googleapis.com/css?family=Teko:400,800,700,300');
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+@import url('https://fonts.googleapis.com/css?family=Bungee Shade');
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  .content {
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 402px;
+    max-width: 600px;
+    margin: auto 0;
+    position: absolute;
+    top:0; left: 50%; bottom: 9%; right: 0;
+    margin-left: -300px;
+    transform: translateY(-100px);
+  }
+  .view1{
+    background-image: url('../icons/fortnit.png');
+  }
+  .view2{
+    background-image: url('../icons/reg_page.png');
+  }
+  .view3{
+    background-image: url('../icons/mainPage.png');
+  }
+  .view4{
+    background-image: url('../icons/scorePage.png');
+  }
+  .view5{
+    background-image: url('../icons/statsPage.png');
+  }
+  
+.container img{
+  width: 120px;
+  height: auto;
+}
+.container2 img{
+  width: 65px;
+  height: auto;
+}
+.container3 img{
+  width: 80px;
+  height: auto;
+}
+#main h1 {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.btn {
+position: static;
+background: #fff;
+position: absolute;
+border-radius: 3px;
+cursor: pointer;
+transition: border 0.1s ease-in-out;
+font-size: 22px;
+color : #333;
+margin : 4px auto;
+width : 110px;
+height : 28px;
+overflow: hidden;
+text-align : center;
+cursor : pointer;
+box-shadow: 0px 3px 5px rgba(0,0,0,.2);
+text-transform: uppercase;
+font-family: 'Squada One', cursive;
+text-shadow: 
+      1px 1px 0px #FFF, 
+      2px 2px 0px #999,
+      3px 3px 0px #FFF;
+font-weight: 800;
+margin-left: -75px;
+display: block;
+}
+.btn:hover {
+  color: #d90075;
+}
+.b1 {
+  top:50%; left: 53%; bottom: 0; right: 0;
+}
+.b2 {
+  top:75%; left: 53%; bottom: 0; right: 0;
+}
+.b3 {
+  top:50%; left: 85%; bottom: 0; right: 0;
+}
+.b4 {
+  top:75%; left: 53%; bottom: 0; right: 0;
+}
+.b2:hover {
+  color: #eb811f;
+}
+.b7{
+  font-size: 26px;
+  width : 180px;
+  height : 30px;
+  top:45%; left: 48%; bottom: 0; right: 0;
+}
+.b71{
+  font-size: 20px;
+  width : 120px;
+  height : 26px;
+  top:75%; left: 53%; bottom: 0; right: 0;
+}
+.b72{
+  font-size: 20px;
+  width : 85px;
+  height : 24px;
+  top:90%; left: 15%; bottom: 0; right: 0;
+}
+.b73{
+  width : 130px;
+  height : 28px;
+  top:72%; left: 52%; bottom: 0; right: 0;
+}
+.b76{
+  width : 130px;
+  height : 28px;
+  top:52%; left: 52%; bottom: 0; right: 0;
+}
+.b74{
+  font-size: 18px;
+  width : 125px;
+  height : 24px;
+  top:90%; left: 90%; bottom: 0; right: 0;
+}
+.b75{
+  font-size: 20px;
+  width : 120px;
+  height : 26px;
+  top:65%; left: 53%; bottom: 0; right: 0;
+}
+.b72:hover {
+  color: #c41e1edb;
+}
+.btn74:hover {
+  color: #c41e1edb;
+}
+.input {
+  top:85%; left: 50%; bottom: 0; right: 0;
+  margin-top: 170px;
+  margin-left: 0px; 
+  font-weight: 500;
+  letter-spacing: 2px;      
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  color : rgb(197, 189, 189);
+  text-shadow: 
+      1px 1px 0px  rgb(73, 70, 70), 
+      1px 0px 0px #fff;
+}
+.input2 {
+  top:40%; left: 0; bottom: 0; right: 0;
+  margin-top: 150px;
+  margin-left: 70px; 
+  font-weight: 500;
+  letter-spacing: 2px;      
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  color : rgb(197, 189, 189);
+  text-shadow: 
+      1px 1px 0px  rgb(73, 70, 70), 
+      1px 0px 0px #fff;
+}
+#tip{
+  top:20%; left: 0; bottom: 0; right: 0;
+  margin-top: 60px;
+  margin-left: 0px; 
+  letter-spacing: 2px;
+  font-family: 'Teko', sans-serif;
+  font-size: 22px;
+  color : rgb(240, 56, 56);
+  text-shadow: 
+      1px 1px 0px  rgb(73, 70, 70), 
+      1px 0px 0px #fff;
+}
+.gameTips{
+  letter-spacing: 2px;
+  font-family: 'Teko', sans-serif;
+  color : rgb(227, 192, 56);
+  text-shadow: 
+      1px 1px 0px  rgb(73, 70, 70), 
+}
+.gt{
+  letter-spacing: 1px;
+  margin-top: 143px;
+  font-size: 18;
+}
+.gt2{
+  letter-spacing: 0px;
+  margin-top: 57px;
+  font-size: 18;
+}
+.gt3{
+  position: relative;
+  top:30%; left: 0%; bottom: 0; right: 0;
+  font-size: 50px;
+  text-shadow: 
+      3px 1px 0px  rgb(0, 0, 0),
+      1px 0px 0px #fff;
+}
+.gt4{
+  position: relative;
+  top:27%; left: 0%; bottom: 0; right: 0;
+  color : rgb(172, 166, 166);
+  font-size: 40px;
+  text-shadow: 
+      3px 1px 0px  rgb(0, 0, 0),
+      1px 0px 0px #fff;
+}
+
+.score{
+  position: relative;
+  letter-spacing: 2px;
+  font-family: 'Teko', sans-serif;
+}
+.s{
+  top:15%; left: 0%; bottom: 0; right: 0;
+  font-size: 26px;
+  color : rgb(172, 166, 166);
+  text-shadow: 
+      1px 1px 0px  rgb(73, 70, 70), 
+      1px 0px 0px #fff;
+}
+.s00{
+  top:8%; left: 0%; bottom: 0; right: 0;
+  font-size: 18px;
+  color : rgb(131, 128, 128);
+  text-shadow: 
+      1px 1px 0px  rgb(6, 6, 6);
+}
+.s000{
+  font-size: 20px;
+  color : rgb(203, 41, 29);
+  text-shadow: 
+    2px 1px 0px  rgb(6, 6, 6);
+}
+.s01{
+  font-size: 35px;
+  color : rgb(227, 179, 56);
+  text-shadow: 
+    3px 1px 0px  rgb(6, 6, 6);
+}
+.s02{
+  font-size: 28px;
+  color : rgb(201, 141, 51);
+  text-shadow: 
+    2px 1px 0px  rgb(6, 6, 6);
+}
+.s03{
+  font-size: 23px;
+  color : rgb(160, 109, 54);
+  text-shadow: 
+    2px 1px 0px  rgb(6, 6, 6);  
+}
+.s2{
+  top:8%; left: 0%; bottom: 0; right: 0;
+  font-size: 26px;
+  color : rgb(172, 166, 166);
+  text-shadow: 
+      1px 1px 0px  rgb(73, 70, 70), 
+      1px 0px 0px #fff;
+}
+.s2g0{
+  font-size: 23px;
+  color : rgb(39, 147, 230);
+  text-shadow: 
+      2px 1px 1px  rgb(6, 6, 6);  
+}
+.s2g1{
+  font-size: 23px;
+  color : rgb(53, 117, 228);
+  text-shadow: 
+      2px 1px 0px  rgb(6, 6, 6);
+}
+.s2g2{
+  font-size: 23px;
+  color : rgb(49, 169, 233);
+  text-shadow: 
+      2px 1px 0px  rgb(6, 6, 6);
+}
+#userScoreTable {
+  position: relative;
+  top:12%; left: 0%; bottom: 0; right: 0; /*60 50 0 0 */
+
+}
+#userScoreTable2 {
+  position: relative;
+  top:7%; left: 0%; bottom: 0; right: 0; /*60 50 0 0 */
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  color : rgb(203, 138, 59);
+}
+#tipsUl {
+  top:30%; left: 40%; bottom: 0; right: 0;
+  margin-top: 65px;
+  margin-left: 75px;
+  letter-spacing: 1px; 
+  font-family: 'Teko';
+  font-weight: 200;
+  font-size: 17px;
+  color : rgb(227, 179, 56);
+  text-shadow: 
+      1px 1px 0px  rgb(6, 6, 6);
+}
