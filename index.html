@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>James Zhao</title>
+    <base target="_blank">
     <style>
         body {
             background-color: black;
@@ -32,28 +34,41 @@
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" > </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178644248-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178644248-1');
+    </script>
+
+
 </head>
 <body>
     <div id="outer">
-        Welcome to my website, my name is James.
-        <br/>
-        Here are some commands to checkout: <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span>man,</span> <span>whoareyou</span>
-        <br/>
-        <br/>
-        Here are some links to checkout: <br/>
-        <a href="https://www.james10424.com/resume.pdf">My resume</a>
-        <a href="https://www.james10424.com/test/309/a/2/js/">The tank game</a>
-        <a href="https://www.james10424.com/test/309/a/1/games/">Some PHP only games</a>
-        <br/>
-        <br/>
-        Otherwise, enjoy this fake terminal!
+<p>
+Welcome to my website, my name is James Zhao. <a href="/resume.pdf">Resume</a> <a href="https://github.com/james10424">Github</a> <a href="https://www.linkedin.com/in/james-zhao-688118179/">Linkedin</a>
+</p>
+<p>
+I enjoy solving (my) problems with codes, from playing my favorite music with AppleScript (too lazy to move my mouse) to skipping online course videos with JavaScript (didn't bother to watch). Why would you want to do those tedious stuff when you can automate them?
+</p>
+<p>
+Here are some of my projects to checkout:
+<a href="/rejection">Generate a job rejection email for me</a> <a href="/tankGame">Tank battle royale</a> <a href="/LunarLockout">Lunar Lockout</a> <a href="/LAT100">Latin vocabulary</a>
+</p>
+<pre>
+Here are some commands to start with:
+<span>man,</span> <span>whoareyou</span>
+
+Source code of this site: <a href="https://github.com/james10424/james10424.github.io">Github</a>
+
+Otherwise, enjoy this fake terminal!
+</pre>
         <div id="root"></div>
     </div>
-
     <input type="text" id="input" style="position: absolute; top: -999px" />
-
-    
     <script type="text/babel" src="/index.jsx"></script>
 </body>
 </html>

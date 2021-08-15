@@ -1,0 +1,12 @@
+Hi <name>,
+
+Thank you so much for your interest in <company>, and for taking the time to apply to the <position> role.
+
+We have reviewed your resume, and while you have some fantastic experience, we have decided to move forward with other applicants whose skills and experience are more closely aligned to this particular position.
+
+Please keep an eye on our Careers Page for future opportunities, and we will also reach out if a position opens up that may be a good fit.
+
+We wish you all the best in your job search!
+
+Cheers,
+The <company> Talent Team

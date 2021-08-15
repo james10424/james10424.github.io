@@ -1,0 +1,10 @@
+Hello <name>,
+
+Thank you for your interest in <position>. We regret to inform you that you have not been selected for this position.
+
+Your resume will remain active in our Talent Management system, and we encourage you to continue to explore additional opportunities at <company>.  Please be sure to keep your Candidate Profile updated at our Career Opportunities page.
+
+Thank you again for your interest.
+
+Sincerely,
+<company>

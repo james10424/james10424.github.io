@@ -1,0 +1,8 @@
+Hello <name>
+
+We really appreciate the time and effort you took to connect with us and apply for the position: <position> .
+
+We are no longer reviewing applicants for this particular position, but that doesn't necessarily mean this is the end. There are many openings at <company> and we're always looking for smart, qualified and motivated applicants. If you see another interesting position, please apply and we'll get back in touch!
+
+Thanks,
+Global Talent Acquisition

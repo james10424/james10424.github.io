@@ -1,0 +1,8 @@
+Dear <name>,
+
+Thank you for taking the time to interview with <company>. We appreciate your interest in our organization.
+Even though we liked your application, we had a significant number of candidates for this position and the hiring process has been a competitive one. Unfortunately, we have decided not to move your application forward at this time. However, we appreciate your interest in working with us and we wish you the best of luck with your job search.
+
+Thank you,
+Regards,
+<company>

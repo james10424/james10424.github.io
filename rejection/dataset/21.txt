@@ -1,0 +1,6 @@
+Dear <name>, We have received your application for position <position> - 2000154. After consideration, we regret to inform you that you have not been selected for this position. Please feel free to visit our career page regularly to review other available job openings.
+
+We thank you for your interest in <company> and wish you all the best in your career search.
+
+Best regards,
+<company> Talent Acquisition

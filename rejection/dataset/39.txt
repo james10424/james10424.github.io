@@ -1,0 +1,10 @@
+Hi <name>,
+
+Unfortunately, we have decided not to proceed with your candidacy for the <position> opening at <company>.
+
+We received many qualified applicants and have decided to move ahead with another candidate who we feel is a better match for requirements of this particular position.
+
+Thanks again for your interest in <company> and we wish you luck in your search.
+
+Regards,
+The Recruiting Team at <company>

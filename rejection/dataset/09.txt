@@ -1,0 +1,8 @@
+Dear <name>,
+
+Thank you for applying to our <position> role at <company>. We appreciate your interest in our organization and for the time spent on this application. Unfortunately, after review, we have decided to move forward with other qualified candidates, whose skills, experiences, and overall application were just a better match to our business needs.
+
+As always, we look forward to potentially working with you in the future!
+
+Sincerely,
+<company> Talent Acquisition

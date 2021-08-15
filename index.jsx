@@ -1,7 +1,8 @@
 class Term extends React.Component {
     constructor(props) {
         super(props);
-        this.prompt = <span><a href="/">guest</a>$ </span>;
+        this.user = "guest";
+        this.prompt = <span>{this.user}$ </span>;
         this.state = {
             input: "",
             history: [],
@@ -14,7 +15,7 @@ class Term extends React.Component {
                 return "";
             }
             s = s.split(" ");
-            if (s[0] == "man") {
+            if (s[0] == "help") {
                 if (!s[1]) {
                     return "Nothing really works here, it's just a fake terminal";
                 }
@@ -56,7 +57,7 @@ class Term extends React.Component {
                             </pre>
                             <b>EXAMPLES</b>
                             <pre>   <b>whoareyou</b></pre>
-                            <pre>        <a href="resume.pdf">resume.pdf</a></pre>
+                            <pre>        <a href="/resume.pdf">resume.pdf</a></pre>
                             <b>AUTHOR</b>
                             <pre>   Written by me</pre>
                             <b>REPORTING BUGS</b>
@@ -70,7 +71,10 @@ class Term extends React.Component {
                 return <a href={s[1]}>{s[1]}</a>;
             }
             if (s[0] == "whoareyou") {
-                return <a href="resume.pdf">resume.pdf</a>;
+                return <a href="/resume.pdf">resume.pdf</a>;
+            }
+            if (s[0] == "sudo") {
+                return <div>{this.user} is not in the sudoers file. This incident will be reported</div>;
             }
             return s[0] + ": command not found"
         }
@@ -79,16 +83,13 @@ class Term extends React.Component {
                 this.clearInterval();
                 this.setInterval();
                 var ret = {};
-                if (e.keyCode == 8) {
-                    ret = {input: prev.input.substring(0, prev.input.length - 1)};
-                }
-                else if (e.keyCode == 13) {
+                if (e.keyCode == 13) {
                     var response = this.process(prev.input.trim());
                     var history = [...prev.history, [prev.input, response]];
                     if (history.length > 100) history = history.slice(0, 100);
                     ret = {input: "", history: history};
                 }
-                else {
+                else if (e.keyCode >= 32) {
                     ret = {input: prev.input + (e.ctrlKey ? "^" : "") + e.key};
                 }
                 ret.cursor = true;
@@ -96,6 +97,11 @@ class Term extends React.Component {
                 return ret;
             });
             this.scroll();
+        }
+        this.keydown = e => {
+            if (e.keyCode == 8) {
+                this.setState(prev => {return {input: prev.input.substring(0, prev.input.length - 1)}});
+            }
         }
         this.arrow = e => {
             this.setState(prev => {
@@ -138,6 +144,7 @@ class Term extends React.Component {
         else {
             document.addEventListener("keypress", this.keypress);
             document.addEventListener("keydown", this.arrow);
+            document.addEventListener("keydown", this.keydown);
         }
     }
 
@@ -156,8 +163,3 @@ ReactDOM.render(<Term />, document.getElementById("root"));
 document.addEventListener("touchend", function() {
     $("#input").focus();
 }, true);
-
-// $(document.body).ontouchend = function() {
-//     $("#input").focus();
-//     console.log("touich");
-// };

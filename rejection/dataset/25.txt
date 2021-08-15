@@ -1,0 +1,6 @@
+Hello <name>,
+
+Thank you for your interest in joining the <company> team. Unfortunately, we have decided not to proceed with your candidacy for this role. I know this wasn't the outcome you were hoping for but we wish you the best of luck in your search.
+
+Regards,
+The <company> Team

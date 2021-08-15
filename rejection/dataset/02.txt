@@ -1,0 +1,11 @@
+Hello <name>,
+
+Thank you for taking the time to discuss the <position> role with us. I regret to inform you that we have decided not to progress further with your application, at this time we have selected the candidates who we believe most closely match the job requirements if the position. Will definitely keep you posted if things change on our end.
+
+Thank you again for your interest in Article. We wish you every success with your job search.
+
+Thanks and Best Regards,
+
+<company>
+
+HR Recruiter

@@ -1,0 +1,2 @@
+Thank you for applying to the <position> position at <company>.
+Unfortunately, <company> has moved to the next step in their hiring process, and your application was not selected at this time.

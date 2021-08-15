@@ -1,0 +1,10 @@
+Hello <name>,
+
+Thank you for giving us the opportunity to consider your application for employment at <company>. We have reviewed your resume and unfortunately, at this time we will not be moving your application forward. At <company> we continue to grow so there just might be something in the future that will bring us back together. We are always updating our careers page - new opportunities are created and shared here all the time or follow us on LinkedIn and Twitter for company news.
+
+Thanks again for your interest in employment at <company>.
+
+Regards,
+
+The <company> Recruiting Team
+

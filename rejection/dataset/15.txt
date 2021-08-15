@@ -1,0 +1,8 @@
+Hi <name>,
+
+Thank you for your interest in our <position> position. At this time, we have chosen to proceed with another candidate who has more relevant experience. However, we were impressed with your background and will keep your resume for future opening.
+
+These emails are never fun to send and we are so thankful for your interest in <company> . We wish you the best of luck in your search!
+
+Regards,
+<company>

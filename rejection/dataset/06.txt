@@ -1,0 +1,10 @@
+Hi <name>,
+
+Thank you for your interest in <company> and for sharing your application with us.
+
+After reviewing we have made the decision not to move forward at this time.
+
+As we continue to grow, I encourage you to check out our careers page, there could be roles that would be a great fit for you in the future.
+
+Please keep in touch,
+<company>

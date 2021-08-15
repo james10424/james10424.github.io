@@ -1,0 +1,10 @@
+Hello <name>,
+
+Thank you for your interest in the <position> position at <company>. While your skills and background are impressive, we have decided to proceed with other applicants who more closely fit our needs at this time.
+
+We appreciate your time and effort in submitting an application. We encourage you to apply for other positions at <company> in the future on our career page.
+
+Again, thank you for your interest in a position with <company> and we wish you success in your job search and future career.
+
+Sincerely,
+<company> Team

@@ -1,0 +1,11 @@
+Hello James,
+
+Thank you for your interest in <company>. We have carefully reviewed your application for the position of <position>. After careful consideration of your skills and experiences, we have identified candidates whose qualifications more closely meet the requirements of this position and we have decided not to move forward with your candidacy at this time.
+
+We want you to find the right role to build a rewarding career. We encourage you to continue exploring open opportunities with <company>.
+
+Again, thank you for considering <company> and best wishes with your continued job search.
+
+Warm regards,
+
+<company> Recruitment Team

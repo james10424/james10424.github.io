@@ -1,0 +1,10 @@
+Hi <name>,
+
+Thank you for your interest in <company> and for giving us the opportunity to review your application for the <position> position.
+
+After reviewing your resume, we've made the decision to not move forward at this time.
+
+We appreciate your interest in <company> and wish you success in your job search.
+
+Best,
+<company> Talent Attraction Team

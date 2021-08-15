@@ -1,0 +1,10 @@
+Hi <name>,
+
+Thank you for taking the time to consider <company>.
+
+After careful consideration of your application, we've made the decision to not move forward at this time. I hope you don't mind if we reach out to you in the future as more positions open up.
+
+We appreciate your interest and wish you all the best in your next steps.
+
+Regards,
+The <company> Recruiting Team

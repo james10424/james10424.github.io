@@ -1,0 +1,6 @@
+Hi <name>,
+
+I wanted to thank you for taking the time to submit your application to <company>. Unfortunately, we won't be moving forward at this time. We will keep your information on file for future openings and we wish you the best of luck!
+
+Sincerely,
+<company> Recruiting Team

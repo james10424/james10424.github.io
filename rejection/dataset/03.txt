@@ -1,0 +1,8 @@
+Hi <name>,
+
+Thank you for applying to <company>. We appreciate your interest in our mission and for considering us as you take the next steps in your career. Although the team was impressed with your experience, we decided not to move forward with your candidacy at this time.
+
+Please don’t hesitate to stay in touch and reach out in the future if we have another role you feel is a good fit.
+
+All the best,
+The <company> Talent Acquisition Team

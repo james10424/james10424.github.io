@@ -1,0 +1,6 @@
+Hi <name>,
+
+Thank you for applying for the position of <position> at <company>. We appreciate your interest in a career at <company>. Unfortunately, you haven’t met the requirements for this position. We know it isn’t always easy to put yourself out there—and although this job isn’t the right one for you at this time, you may qualify for a number of other positions. We encourage you to continue exploring other career opportunities on <company> Careers as we continually update openings on a daily basis. We look forward to considering you for other positions at <company>.
+ 
+Thank you,
+<company> Recruiting

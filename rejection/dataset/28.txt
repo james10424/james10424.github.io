@@ -1,0 +1,10 @@
+Hi <name>,
+
+We wanted to let you know that we have reviewed your application for the <position> and after careful consideration, unfortunately, we have decided to not to move forward with your application this time.
+
+We encourage you to visit our website for future opportunities and send your application at “careers.<company>.com”.
+
+Thank you for your time and interest in <company> once again!
+
+Best,
+<company> Talent Acquisition Team

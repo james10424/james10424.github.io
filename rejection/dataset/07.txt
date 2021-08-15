@@ -1,0 +1,9 @@
+Hi <name>,
+
+Thank you for taking the time to consider a career at <company>. Our team has reviewed your application for the Software Engineer, <company> role and we have decided to move forward with other applicants at this time.
+
+We appreciate the time you took to apply, and hope that you will consider <company> again in the future. Please continue to check our careers page for available positions at www.<company>.com/careers and follow us on LinkedIn for company updates.
+
+Best,
+
+<company> Talent Team

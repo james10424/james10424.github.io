@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta HTTP-EQUIV="EXPIRES" CONTENT="0">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<title>Tank Battle Royal Single Player</title>
+		<link rel="stylesheet" type="text/css" href="css/mainpage.css" />
+		<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script language="javascript" src="engine.js" > </script>
+		<script language="javascript" src="model.js" > </script>
+		<script language="javascript" src="controller.js" > </script>
+		<style>
+			ul#info li {
+				display: inline;
+			}
+		</style>
+	</head>
+	<body bgcolor=ffffff onload="">
+		<center>
+			<br><br><br>
+			<div id="weapon_info">
+				<div><span id="healthColor" style="background-color: red; color: white;">Health</span> <progress id="health" value="100" max="100"></progress>+1</div>
+			</div>
+
+		<div  id="game" style="position: relative;">
+			<table>
+				<col width="180">
+				<col width="605">
+				<col width="500">
+				<tr>
+				<td>Angle(Scroll):<p id="angleText">0</p ><progress id="angle" style="transform: rotate(-90deg)" value="0" max="45"></progress>
+				</td>
+				<td>
+				<canvas id="stage" width="600" height="400" style="border:2px solid black;"></canvas>
+				<canvas id="mini" width="200" height="133" style="border:1px solid black; transform: translate(604px, -404px);"></canvas>
+				<div id="joystickouter"></div>
+				<div id="joystick" class="circle joystick"></div>
+				<div id="fire" class="circle fire">Fire</div>
+				<div id="secondary">Fire</div>
+				<div id="dashTouch">Dash</div>
+				</td>
+			 
+				<td>
+				 <ul style="transform: translate(-20px, 20px);">
+				  <li>Machine Gun(Space) <span id="overheatColor">Overheat</span>: <progress id="overheat" value="0" max="100"></progress></li>
+				  <li>Main Gun(LMB) <span id="reloadMain">reload</span>: <progress id="reload" value="0" max="100"></progress></li>
+				  <li>Machine gun ammo: <span id="machineAmmo">0</span></li>
+				  <li>Main Gun ammo: <span id="cannonAmmo">0</span></li>
+				  <li>Weapon Time: <span id="weaponTime">-</span></li>
+				  <li>Score: <span id="gameScore">0</span></li>
+				  <li>Build(B) <span id="buildColor">CD</span>: <progress id="build" value="100" max="100"></progress></li>
+				  <li>Dash(E) <span id="dashColor">CD</span>: <progress id="dash" value="100" max="100"></progress></li>
+				  <li>Life Steal(passive): 100%</li>
+				  <li><span style="background-color: rgba(247, 177, 111, 1); border: 1px solid black; border-radius: 50%; width: 15px; height: 15px; display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Ammo</li>
+				  <li><span style="background-color: rgba(0,0,255,1); border: 1px solid black; border-radius: 50%; width: 15px; height: 15px; display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;</span> New Weapon/Extend time</li>
+				  <li><span style="background-color: rgba(239, 237, 218, 1); border: 1px solid black; border-radius: 50%; width: 15px; height: 15px; display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Health Pack</li>
+				  <li><span style="background-color: rgba(0,255,255,1); border: 1px solid black; width: 15px; height: 15px; display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;</span> Portal</li>
+				 </ul>
+				</td>
+				</tr>
+			</table>
+			<canvas id="big" width="800" height="600" style="visibility:hidden; transform: translateY(-600px);"></canvas>
+			<img id="explode1" src="resources/1.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode2" src="resources/2.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode3" src="resources/3.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode4" src="resources/4.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode5" src="resources/5.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode6" src="resources/6.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode7" src="resources/7.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode8" src="resources/8.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode9" src="resources/9.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode10" src="resources/10.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode11" src="resources/11.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode12" src="resources/12.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode13" src="resources/13.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode14" src="resources/14.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode15" src="resources/15.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode16" src="resources/16.png" style="visibility: hidden; transform: translateY(-600px);">
+			<img id="explode17" src="resources/17.png" style="visibility: hidden; transform: translateY(-600px);">
+		</div>
+		</center>
+	</body>
+</html>
+

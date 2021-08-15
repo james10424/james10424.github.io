@@ -1,0 +1,13 @@
+Hi <name>,
+
+We wanted to update you on your application for the <position> role.
+
+Unfortunately, our team has not selected you for further consideration for this role specifically.
+
+Don't be discouraged, though. You might not be a fit for this particular role, but we'd love it if you stuck around and kept an eye on new jobs. We're sure one of them will catch your attention!
+
+Please make sure to keep your profile current, so we can find you as we're searching for candidates!
+
+Regards,
+
+Your <company>' Recruiting Team

@@ -1,0 +1,10 @@
+Hi <name>,
+
+Thanks so much for considering <company> as your future employer. We reviewed your profile and are unfortunately not moving forward with your application for the position of <position>.
+
+Keep an eye on our career page though because we are growing really fast and encourage you to apply to a different role in the future.
+
+Wishing you the best of luck on your search!
+
+Regards,
+<company>

@@ -1,0 +1,13 @@
+Hello <name>,
+
+Thank you so much for your interest in the <position> opportunity at <company>.
+
+Your resume and qualifications have been reviewed. Although your talent is valued, we have decided to pursue other candidates whose skills and experience better meet our needs at this time.
+
+We would love to hear from you in future and hope you will remain interested in <company> and consider other positions with us that are tailored to your interests and qualifications.
+
+For more career opportunities please visit us at: www.<company>.com/careers.
+
+Sincerely,
+
+Global <company> Talent Acquisition Team

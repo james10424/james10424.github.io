@@ -1,0 +1,8 @@
+Hello <name>,
+
+Thank you for your interest in the <position> position at <company>. We have reviewed your application. Unfortunately, you are not the right fit for the position at this time.
+
+I am sorry for the disappointing news. Best of luck in your job search.
+
+Sincerely,
+<company>
