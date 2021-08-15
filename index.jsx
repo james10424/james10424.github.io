@@ -1,3 +1,72 @@
+const RESUME_URL = "https://resume-public.s3.ca-central-1.amazonaws.com/resume.pdf";
+/**
+ * prop:
+ * link: the link to go to
+ * text: the text to display
+*/
+class Link extends React.Component {
+    static help() {
+        return <div>
+        <pre>LINK(1)    General Commands Manual     LINK(1)</pre>
+        <b>Name</b>
+        <pre>   link - generate a hyperlink</pre>
+        <b>SYNOPSIS</b>
+        <pre>   link <u>LINK</u></pre>
+        <b>DESCRIPTION</b>
+        <pre>   Return a hyperlink pointed to the address
+                provided.
+        </pre>
+        <b>EXAMPLES</b>
+        <pre>   <b>link</b> <u>http://www.google.com</u></pre>
+        <pre>        <a href="http://www.google.com">http://www.google.com</a></pre>
+        <b>AUTHOR</b>
+        <pre>   Written by me</pre>
+        <b>REPORTING BUGS</b>
+        <pre>   Just don't tell me there are bugs</pre>
+    </div>;
+    }
+    render() {
+        return <a href={this.props.link}>{this.props.text || this.props.link}</a>;
+    }
+}
+
+/**
+ * prop:
+ * cmd: the command
+*/
+class Help extends React.Component {
+    render() {
+        if (!this.props.cmd) {
+            return "Nothing really works here, it's just a fake terminal";
+        }
+        if (this.props.cmd == "link") {
+            return <Link.help />;
+        }
+        if (this.props.cmd == "whoareyou") {
+            return (
+                <div>
+                    <pre>WHOAREYOU(1)    General Commands Manual     WHOAREYOU(1)</pre>
+                    <b>Name</b>
+                    <pre>   whoareyou - return a link to my resume</pre>
+                    <b>SYNOPSIS</b>
+                    <pre>   whoareyou</pre>
+                    <b>DESCRIPTION</b>
+                    <pre>   Return a hyperlink to my resume so you can
+                            get to know who I am.
+                    </pre>
+                    <b>EXAMPLES</b>
+                    <pre>   <b>whoareyou</b></pre>
+                    <pre>        <a href={RESUME_URL}>resume.pdf</a></pre>
+                    <b>AUTHOR</b>
+                    <pre>   Written by me</pre>
+                    <b>REPORTING BUGS</b>
+                    <pre>   There can't be any bug in such simple command?</pre>
+                </div>
+            );
+        }
+        return "No help page for " + this.props.cmd;
+    }
+}
 class Term extends React.Component {
     constructor(props) {
         super(props);
@@ -16,62 +85,13 @@ class Term extends React.Component {
             }
             s = s.split(" ");
             if (s[0] == "help") {
-                if (!s[1]) {
-                    return "Nothing really works here, it's just a fake terminal";
-                }
-                if (s[1] == "link") {
-                    return (
-                        <div>
-                            <pre>LINK(1)    General Commands Manual     LINK(1)</pre>
-                            <b>Name</b>
-                            <pre>   link - generate a hyperlink</pre>
-                            <b>SYNOPSIS</b>
-                            <pre>   link <u>LINK</u></pre>
-                            <b>DESCRIPTION</b>
-                            <pre>   Return a hyperlink pointed to the address
-                                    provided.
-                            </pre>
-                            <b>EXAMPLES</b>
-                            <pre>   <b>link</b> <u>http://www.google.com</u></pre>
-                            <pre>        <a href="http://www.google.com">http://www.google.com</a></pre>
-                            <pre>   <b>link</b> <u>test/309</u></pre>
-                            <pre>        <a href="test/309">test/309</a></pre>
-                            <b>AUTHOR</b>
-                            <pre>   Written by me</pre>
-                            <b>REPORTING BUGS</b>
-                            <pre>   Just don't tell me there are bugs</pre>
-                        </div>
-                    );
-                }
-                if (s[1] == "whoareyou") {
-                    return (
-                        <div>
-                            <pre>WHOAREYOU(1)    General Commands Manual     WHOAREYOU(1)</pre>
-                            <b>Name</b>
-                            <pre>   whoareyou - return a link to my resume</pre>
-                            <b>SYNOPSIS</b>
-                            <pre>   whoareyou</pre>
-                            <b>DESCRIPTION</b>
-                            <pre>   Return a hyperlink to my resume so you can
-                                    get toknow who I am.
-                            </pre>
-                            <b>EXAMPLES</b>
-                            <pre>   <b>whoareyou</b></pre>
-                            <pre>        <a href="/resume.pdf">resume.pdf</a></pre>
-                            <b>AUTHOR</b>
-                            <pre>   Written by me</pre>
-                            <b>REPORTING BUGS</b>
-                            <pre>   There can't be any bug in such simple command?</pre>
-                        </div>
-                    );
-                }
-                return "No help page for " + s[1];
+                return <Help cmd={s[1]} />;
             }
             if (s[0] == "link") {
-                return <a href={s[1]}>{s[1]}</a>;
+                return <Link link={s[1]} />;
             }
             if (s[0] == "whoareyou") {
-                return <a href="/resume.pdf">resume.pdf</a>;
+                return <Link link={RESUME_URL} text="resume.pdf" />;
             }
             if (s[0] == "sudo") {
                 return <div>{this.user} is not in the sudoers file. This incident will be reported</div>;
